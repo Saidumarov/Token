@@ -42,7 +42,7 @@ export const AuthProvider = ({ children }) => {
               if (res?.access_token) {
                 localStorage.setItem(
                   "access_token",
-                  JSON.stringify(res.access)
+                  JSON.stringify(res.access_token)
                 );
                 setToken(res?.access_token);
               }
