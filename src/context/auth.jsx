@@ -45,6 +45,7 @@ export const AuthProvider = ({ children }) => {
                   JSON.stringify(res.access_token)
                 );
                 setToken(res?.access_token);
+                refetch();
               }
               if (res?.status === 403) {
                 setToken(null);
